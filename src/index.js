@@ -1,11 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 import Library from "./lecture03_book/Library";
 import Clock from "./lecture04_clock/Clock";
 import CommentList from "./lecture05_comment/CommentList";
+import NotificationList from "./lecture06reservedNotifications/NotificationList";
 
 /*const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,11 +16,19 @@ root.render(
 );*/
 
 ReactDOM.render(
+  <React.StrictMode>
+    <NotificationList />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+
+/*// 댓글 사용자 및 리스트 출력
+ReactDOM.render(
     <React.StrictMode>
       <CommentList />
     </React.StrictMode>
     , document.getElementById('root')
-)
+)*/
 
 /*// 1초 마다 Clock 컴포넌트를 업데이트
 setInterval(() => {
