@@ -33,6 +33,8 @@ const Comment = (props) => {
 		}
 	}
 
+	console.log('프롭스 넘어온 댓글',props.comment, props.name)
+
 	return (
 			<div style={styles.wrapper}>
 				<div style={styles.imageContainer}>
