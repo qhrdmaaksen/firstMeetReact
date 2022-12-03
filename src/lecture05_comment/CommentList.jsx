@@ -8,12 +8,14 @@ const CommentList = (props) => {
     { name: "이영수", comment: "반가워요" },
   ];
 
+  console.log("프롭스 보낼 객체", comments);
+  console.log("프롭스 보낼 이름", comments.name);
+  console.log("프롭스 보낼 댓글", comments.comment);
+
   return (
     <div>
       {comments.map((comment) => {
-        return (
-          <Comment name={comment.name} comment={comment.comment} />
-        );
+        return <Comment name={comment.name} comment={comment.comment} />;
       })}
     </div>
   );

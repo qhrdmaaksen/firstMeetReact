@@ -15,20 +15,21 @@ root.render(
   </React.StrictMode>
 );*/
 
+/*알림 메시지 출력
 ReactDOM.render(
   <React.StrictMode>
     <NotificationList />
   </React.StrictMode>,
   document.getElementById("root")
-);
+);*/
 
-/*// 댓글 사용자 및 리스트 출력
+// 댓글 사용자 및 리스트 출력
 ReactDOM.render(
     <React.StrictMode>
       <CommentList />
     </React.StrictMode>
     , document.getElementById('root')
-)*/
+)
 
 /*// 1초 마다 Clock 컴포넌트를 업데이트
 setInterval(() => {
