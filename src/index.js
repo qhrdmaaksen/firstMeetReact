@@ -8,7 +8,8 @@ import Clock from "./lecture04_clock/Clock";
 import CommentList from "./lecture05_comment/CommentList";
 import NotificationList from "./lecture06reservedNotifications/NotificationList";
 import Accommodate from "./lecture07CustomHook/Accommodate";
-import ConfirmButton from "./lecture08ClickEvent/ConfirmButton";
+import ConfirmButtonClass from "./lecture08ClickEvent/ConfirmButtonClass";
+import ConfirmButtonFunction from "./lecture08ClickEvent/ConfirmButtonFunction";
 
 /*const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,13 +18,21 @@ root.render(
   </React.StrictMode>
 );*/
 
-// button event test
+// button click event function component test
+ReactDOM.render(
+  <React.StrictMode>
+    <ConfirmButtonFunction />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+
+/*// button event class component test
 ReactDOM.render(
     <React.StrictMode>
-      <ConfirmButton />
+      <ConfirmButtonClass />
     </React.StrictMode>,
     document.getElementById('root')
-)
+)*/
 
 /*// 입장 인원 상태 관리  - 커스텀 훅
 ReactDOM.render(

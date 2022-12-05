@@ -1,12 +1,12 @@
 import React from "react";
 
-class ConfirmButton extends React.Component {
+class ConfirmButtonClass extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       isConfirmed: false,
     };
-		/*// arrow function 사용 시 this 가 ConfirmButton 을 가리킴 그래서 bind 를 사용하지 않아도 됨
+		/*// arrow function 사용 시 this 가 ConfirmButtonClass 을 가리킴 그래서 bind 를 사용하지 않아도 됨
 		this.handleConfirm = this.handleConfirm.bind(this)*/
   }
   handleConfirm = () => {
@@ -22,4 +22,4 @@ class ConfirmButton extends React.Component {
     );
   }
 }
-export default ConfirmButton;
+export default ConfirmButtonClass;
