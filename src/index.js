@@ -7,6 +7,7 @@ import Library from "./lecture03_book/Library";
 import Clock from "./lecture04_clock/Clock";
 import CommentList from "./lecture05_comment/CommentList";
 import NotificationList from "./lecture06reservedNotifications/NotificationList";
+import Accommodate from "./lecture07CustomHook/Accommodate";
 
 /*const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,7 +16,15 @@ root.render(
   </React.StrictMode>
 );*/
 
-/*알림 메시지 출력
+// 입장 인원 상태 관리  - 커스텀 훅
+ReactDOM.render(
+  <React.StrictMode>
+    <Accommodate />
+  </React.StrictMode>,
+    document.getElementById('root')
+)
+
+/*//알림 메시지 출력
 ReactDOM.render(
   <React.StrictMode>
     <NotificationList />
@@ -23,13 +32,13 @@ ReactDOM.render(
   document.getElementById("root")
 );*/
 
-// 댓글 사용자 및 리스트 출력
+/*// 댓글 사용자 및 리스트 출력
 ReactDOM.render(
     <React.StrictMode>
       <CommentList />
     </React.StrictMode>
     , document.getElementById('root')
-)
+)*/
 
 /*// 1초 마다 Clock 컴포넌트를 업데이트
 setInterval(() => {
@@ -41,7 +50,7 @@ setInterval(() => {
   )
 }, 1000)*/
 
-/* lecture 03
+ /*//lecture 03
 ReactDOM.render(
   <React.StrictMode>
     <Library />
