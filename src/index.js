@@ -10,6 +10,7 @@ import NotificationList from "./lecture06reservedNotifications/NotificationList"
 import Accommodate from "./lecture07CustomHook/Accommodate";
 import ConfirmButtonClass from "./lecture08ClickEvent/ConfirmButtonClass";
 import ConfirmButtonFunction from "./lecture08ClickEvent/ConfirmButtonFunction";
+import LandingPage from "./lecture09loginStateToolbar/LandingPage";
 
 /*const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,11 +18,20 @@ root.render(
     <Library />
   </React.StrictMode>
 );*/
+/*
 
 // button click event function component test
 ReactDOM.render(
   <React.StrictMode>
     <ConfirmButtonFunction />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+*/
+
+ReactDOM.render(
+  <React.StrictMode>
+    <LandingPage />
   </React.StrictMode>,
   document.getElementById("root")
 );
