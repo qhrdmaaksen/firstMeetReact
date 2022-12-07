@@ -11,6 +11,7 @@ import Accommodate from "./lecture07CustomHook/Accommodate";
 import ConfirmButtonClass from "./lecture08ClickEvent/ConfirmButtonClass";
 import ConfirmButtonFunction from "./lecture08ClickEvent/ConfirmButtonFunction";
 import LandingPage from "./lecture09loginStateToolbar/LandingPage";
+import AttendanceBook from "./lecture10useMapContent/AttendanceBook";
 
 /*const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -29,12 +30,22 @@ ReactDOM.render(
 );
 */
 
+// map list output test
+ReactDOM.render(
+  <React.StrictMode>
+    <AttendanceBook/>
+  </React.StrictMode>,
+  document.getElementById("root")
+)
+
+
+/*// login state toolbar test
 ReactDOM.render(
   <React.StrictMode>
     <LandingPage />
   </React.StrictMode>,
   document.getElementById("root")
-);
+);*/
 
 /*// button event class component test
 ReactDOM.render(
