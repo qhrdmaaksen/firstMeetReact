@@ -12,6 +12,7 @@ import ConfirmButtonClass from "./lecture08ClickEvent/ConfirmButtonClass";
 import ConfirmButtonFunction from "./lecture08ClickEvent/ConfirmButtonFunction";
 import LandingPage from "./lecture09loginStateToolbar/LandingPage";
 import AttendanceBook from "./lecture10useMapContent/AttendanceBook";
+import Reservation from "./etc/Reservation";
 
 /*const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,13 +31,21 @@ ReactDOM.render(
 );
 */
 
-// map list output test
+//식사 예약 및 방문객 수 체크
+ReactDOM.render(
+  <React.StrictMode>
+    <Reservation />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+
+/*// map list output test
 ReactDOM.render(
   <React.StrictMode>
     <AttendanceBook/>
   </React.StrictMode>,
   document.getElementById("root")
-)
+)*/
 
 
 /*// login state toolbar test
