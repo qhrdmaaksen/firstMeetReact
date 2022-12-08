@@ -1,5 +1,6 @@
 import {useState} from "react";
 
+// 식사 예약 및 방문자 수 관리 컴포넌트
 const Reservation = () => {
 
 	const [haveBreakFast, setHaveBreakFast] = useState(false)

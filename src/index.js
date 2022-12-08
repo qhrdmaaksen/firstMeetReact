@@ -13,6 +13,9 @@ import ConfirmButtonFunction from "./lecture08ClickEvent/ConfirmButtonFunction";
 import LandingPage from "./lecture09loginStateToolbar/LandingPage";
 import AttendanceBook from "./lecture10useMapContent/AttendanceBook";
 import Reservation from "./etc/Reservation";
+import FruitSelect from "./etc/FruitSelect";
+import RequestForm from "./etc/RequestForm";
+import SignUp from "./lecture11useInfoInput/SignUp";
 
 /*const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -31,13 +34,37 @@ ReactDOM.render(
 );
 */
 
-//식사 예약 및 방문객 수 체크
+// 사용자 정보 제출 컴포넌트
+ReactDOM.render(
+    <React.StrictMode>
+      <SignUp />
+    </React.StrictMode>
+    , document.getElementById('root')
+)
+
+/*// 요청사항 메시지 팝업 컴포넌트
+ReactDOM.render(
+    <React.StrictMode>
+      <RequestForm />
+    </React.StrictMode>
+    , document.getElementById('root')
+)*/
+
+/*// 과일 선택 컴포넌트
+ReactDOM.render(
+    <React.StrictMode>
+      <FruitSelect />
+    </React.StrictMode>
+    , document.getElementById("root")
+)*/
+
+/*//식사 예약 및 방문객 수 체크
 ReactDOM.render(
   <React.StrictMode>
     <Reservation />
   </React.StrictMode>,
   document.getElementById("root")
-);
+);*/
 
 /*// map list output test
 ReactDOM.render(
