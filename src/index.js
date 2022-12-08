@@ -16,6 +16,8 @@ import Reservation from "./etc/Reservation";
 import FruitSelect from "./etc/FruitSelect";
 import RequestForm from "./etc/RequestForm";
 import SignUp from "./lecture11useInfoInput/SignUp";
+import TemperatureInput from "./lecture12temperatureWater/TemperatureInput";
+import CalculatorTemperature from "./lecture12temperatureWater/CalculatorTemperature";
 
 /*const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -34,13 +36,21 @@ ReactDOM.render(
 );
 */
 
-// 사용자 정보 제출 컴포넌트
+// 사용자 입력에 따라 물이 끓는 상태를 표시하는 컴포넌트
+ReactDOM.render(
+    <React.StrictMode>
+      <CalculatorTemperature />
+    </React.StrictMode>
+    , document.getElementById('root')
+)
+
+/*// 사용자 정보 제출 컴포넌트
 ReactDOM.render(
     <React.StrictMode>
       <SignUp />
     </React.StrictMode>
     , document.getElementById('root')
-)
+)*/
 
 /*// 요청사항 메시지 팝업 컴포넌트
 ReactDOM.render(
