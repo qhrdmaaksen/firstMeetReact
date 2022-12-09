@@ -18,6 +18,7 @@ import RequestForm from "./etc/RequestForm";
 import SignUp from "./lecture11useInfoInput/SignUp";
 import TemperatureInput from "./lecture12temperatureWater/TemperatureInput";
 import CalculatorTemperature from "./lecture12temperatureWater/CalculatorTemperature";
+import SignUpDialog from "./etc/children_dialog/SignUpDialog";
 
 /*const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -36,13 +37,21 @@ ReactDOM.render(
 );
 */
 
-// 사용자 입력에 따라 물이 끓는 상태를 표시하는 컴포넌트
+// props chain children dialog
+ReactDOM.render(
+  <React.StrictMode>
+    <SignUpDialog/>
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+
+/*// 사용자 입력에 따라 물이 끓는 상태를 표시하는 컴포넌트
 ReactDOM.render(
     <React.StrictMode>
       <CalculatorTemperature />
     </React.StrictMode>
     , document.getElementById('root')
-)
+)*/
 
 /*// 사용자 정보 제출 컴포넌트
 ReactDOM.render(
