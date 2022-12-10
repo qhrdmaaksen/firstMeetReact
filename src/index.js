@@ -20,6 +20,7 @@ import TemperatureInput from "./lecture12temperatureWater/TemperatureInput";
 import CalculatorTemperature from "./lecture12temperatureWater/CalculatorTemperature";
 import SignUpDialog from "./etc/children_dialog/SignUpDialog";
 import ProfileCard from "./lecture13Card/ProfileCard";
+import DarkOrLight from "./lecture14Context/DarkOrLight";
 
 /*const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -38,13 +39,21 @@ ReactDOM.render(
 );
 */
 
-// 카드 만들어보기
+// Context 사용해 테마 변경
+ReactDOM.render(
+    <React.StrictMode>
+      <DarkOrLight />
+    </React.StrictMode>
+    , document.getElementById('root')
+)
+
+/*// 카드 만들어보기
 ReactDOM.render(
     <React.StrictMode>
       <ProfileCard/>
     </React.StrictMode>
     , document.getElementById('root')
-)
+)*/
 
 /*// props chain children dialog
 ReactDOM.render(
