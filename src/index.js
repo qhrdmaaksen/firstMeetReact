@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -21,6 +21,7 @@ import CalculatorTemperature from "./lecture12temperatureWater/CalculatorTempera
 import SignUpDialog from "./etc/children_dialog/SignUpDialog";
 import ProfileCard from "./lecture13Card/ProfileCard";
 import DarkOrLight from "./lecture14Context/DarkOrLight";
+import StyledComponentPropsButtonColorChange from "./etc/StyledComponentPropsButtonColorChange";
 
 /*const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -39,13 +40,30 @@ ReactDOM.render(
 );
 */
 
-// Context 사용해 테마 변경
+// theme change test
+const root = document.getElementById('root')
+ReactDOM.createRoot(root).render(
+    <React.StrictMode>
+      <StyledComponentPropsButtonColorChange />
+    </React.StrictMode>
+)
+
+/*// theme change test
+const root = document.getElementById('root')
+ReactDOM.createRoot(root).render(
+    <React.StrictMode>
+      <DarkOrLight />
+    </React.StrictMode>
+)*/
+
+
+/*// Context 사용해 테마 변경
 ReactDOM.render(
     <React.StrictMode>
       <DarkOrLight />
     </React.StrictMode>
     , document.getElementById('root')
-)
+)*/
 
 /*// 카드 만들어보기
 ReactDOM.render(
