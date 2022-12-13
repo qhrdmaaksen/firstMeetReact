@@ -22,6 +22,7 @@ import SignUpDialog from "./etc/children_dialog/SignUpDialog";
 import ProfileCard from "./lecture13Card/ProfileCard";
 import DarkOrLight from "./lecture14Context/DarkOrLight";
 import StyledComponentPropsButtonColorChange from "./etc/StyledComponentPropsButtonColorChange";
+import Blocks from "./lecture15styledComponent/Blocks";
 
 /*const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -40,13 +41,21 @@ ReactDOM.render(
 );
 */
 
-// theme change test
+// styled component blocks test
+const root = document.getElementById('root')
+ReactDOM.createRoot(root).render(
+    <React.StrictMode>
+      <Blocks />
+    </React.StrictMode>
+)
+
+/*// theme change test
 const root = document.getElementById('root')
 ReactDOM.createRoot(root).render(
     <React.StrictMode>
       <StyledComponentPropsButtonColorChange />
     </React.StrictMode>
-)
+)*/
 
 /*// theme change test
 const root = document.getElementById('root')
